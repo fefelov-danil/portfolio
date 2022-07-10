@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+.nav a {
+    padding: 5px 8px;
+}
+.nav a:last-of-type {
+    padding-right: 0;
+}

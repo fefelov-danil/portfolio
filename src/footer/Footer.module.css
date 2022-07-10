@@ -1,0 +1,27 @@
+.footer {
+    padding: 50px 20px;
+    background: #FFE1E6;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.footer h2 {
+    text-align: center;
+    background: #f7f7f7;
+}
+.footerBoxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.footerBoxes .box {
+    width: 50px;
+    height: 50px;
+    background: #f7f7f7;
+}
+.footer p.copyright {
+    text-align: center;
+    background: #f7f7f7;
+    margin-bottom: 0;
+}

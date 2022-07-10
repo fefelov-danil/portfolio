@@ -1,0 +1,40 @@
+.mainBlock {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 0 20px;
+    background: #FAFFE1;
+}
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.text {
+    width: calc(100% - 440px);
+    background: #f7f7f7;
+}
+.text p {
+    margin-bottom: 0;
+}
+.photo {
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
+    background: #f7f7f7;
+}
+@media screen and (max-width: 1020px) {
+    .mainContainer {
+        display: block;
+    }
+    .text {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 25px auto;
+    }
+    .photo {
+        margin: 0 auto;
+    }
+}
