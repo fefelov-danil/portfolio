@@ -1,0 +1,64 @@
+.portfolioWork {
+    padding: 90px 0 0 20px;
+    .columns {
+        max-width: 1580px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        .workImg {
+            position: relative;
+            width: 48%;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            z-index: 1;
+
+        }
+        .nameAndDesc {
+            width: 40%;
+            p {
+                margin-bottom: 0;
+            }
+            p.name {
+                font-size: 60px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+            hr {
+                width: 110px;
+                border-top: 3px solid #8FE48F;
+                margin: 40px 0;
+            }
+            div p {
+                font-family: "Oswald", sans-serif;
+                font-size: 28px;
+                font-weight: 200;
+                margin-bottom: 22px;
+            }
+            div ul {
+                margin-bottom: 40px;
+            }
+            div li {
+                font-size: 18px;
+            }
+            a {
+                padding: 15px 90px;
+                background: #8FE48F;
+                color: #000;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 80px;
+                transition: 0.2s;
+            }
+            a:hover {
+                background: #76BC76;
+            }
+        }
+    }
+
+}
+.forClass {
+    text-align: center;
+}

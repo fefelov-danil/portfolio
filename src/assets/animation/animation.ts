@@ -42,3 +42,84 @@ export const textAnimation = {
         }
     })
 }
+export const textBgAnimation = {
+    hidden: {
+        x: -100
+    },
+    visible: {
+        x: 0,
+        width: '100%',
+        transition: {
+            duration: 1.2,
+            ease: "easeOut"
+        }
+    }
+}
+export const bgFadeAnimation = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut"
+        }
+    }
+}
+export const fadeRightAnimation = {
+    hidden: {
+        x: 25,
+        opacity: 0
+    },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut"
+        }
+    }
+}
+export const fadeLeftAnimation = {
+    hidden: {
+        x: 25,
+        opacity: 0
+    },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut"
+        }
+    }
+}
+export const fadeTopAnimation = {
+    hidden: {
+        x: 25,
+        opacity: 0
+    },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut"
+        }
+    }
+}
+export const fadeBottomAnimation = {
+    hidden: {
+        y: 25,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut"
+        }
+    }
+}

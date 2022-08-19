@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "baseUrl": "src",
+    "SASS_PATH=node_modules":"src",
     "lib": [
       "dom",
       "dom.iterable",

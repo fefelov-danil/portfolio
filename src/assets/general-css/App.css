@@ -61,10 +61,10 @@ h2 {
     margin-bottom: 25px;
 }
 h1 {
-    font-size: 55px;
+    font-size: 90px;
 }
 h2 {
-    font-size: 45px;
+    font-size: 75px;
 }
 h3,
 h4 {
@@ -74,10 +74,10 @@ h4 {
     margin-bottom: 15px;
 }
 h3 {
-    font-size: 33px;
+    font-size: 35px;
 }
 h4 {
-    font-size: 26px;
+    font-size: 28px;
 }
 strong,
 b {
@@ -96,10 +96,10 @@ hr {
 }
 @media only screen and (max-width: 1020px) {
     h1 {
-        font-size: 45px;
+        font-size: 65px;
     }
     h2 {
-        font-size: 35px;
+        font-size: 55px;
     }
     h3 {
         font-size: 28px;
@@ -110,10 +110,10 @@ hr {
 }
 @media only screen and (max-width: 800px) {
     h1 {
-        font-size: 38px;
+        font-size: 48px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
     h3 {
         font-size: 26px;
@@ -124,10 +124,10 @@ hr {
 }
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size: 32px;
+        font-size: 35px;
     }
     h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
     h3 {
         font-size: 24px;
@@ -144,6 +144,27 @@ hr {
     margin: 0 auto;
 }
 
+/* стили для ul li */
+ul.ul-custom {
+    margin-bottom: 20px;
+}
+ul.ul-custom li {
+    position: relative;
+    margin-bottom: 3px;
+    padding-left: 24px;
+    line-height: 1.3;
+}
+ul.ul-custom li:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 6px;
+    height: 6px;
+    background: #29323C;
+    border-radius: 50%;
+}
+
 /* Кнопка с анимацией hover left */
 .btnHoverLeft {
     position: relative;
@@ -151,11 +172,9 @@ hr {
     padding: 12px 65px;
     background: #fff;
     overflow: hidden;
+    color: #fff;
     transition: 0.3s;
     z-index: 1;
-}
-.btnHoverLeft {
-    color: #fff;
 }
 .btnHoverLeft:before {
     content: "";
@@ -171,4 +190,64 @@ hr {
 }
 .btnHoverLeft:hover:before {
     width: calc(100% + 20px);
+}
+
+/* кнопка с анимацией "блик" - <a href="#" class="btn-animation-blicked is-blicked">ОСТАВИТЬ ЗАЯВКУ</a>*/
+.btn-animation-blicked {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: red;
+    padding: 12px 40px;
+    overflow: hidden;
+}
+.btn-animation-blicked.is-blicked:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, hsla(0, 0%, 100%, 0.1)), color-stop(20%, hsla(0, 0%, 100%, 0.2)), to(hsla(0, 0%, 100%, 0.6)));
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.1) 10%, hsla(0, 0%, 100%, 0.2) 20%, hsla(0, 0%, 100%, 0.6));
+    width: 20px;
+    -webkit-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+    left: -20%;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-animation-name: blick;
+    animation-name: blick;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes blick {
+    45%,
+    to {
+        left: 120%;
+    }
+}
+@keyframes blick {
+    45%,
+    to {
+        left: 120%;
+    }
+}
+
+/* Анимация заголовка */
+span.titleBg {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+span.titleBgIn {
+    position: absolute;
+    left: -25%;
+    top: 50%;
+    width: 0;
+    height: 50%;
+    background: #D7F4D7;
+    z-index: -1;
 }
