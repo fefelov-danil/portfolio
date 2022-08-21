@@ -1,29 +1,24 @@
 import React from 'react';
 import s from 'portfolio/Portfolio.module.scss'
 import {motion} from 'framer-motion'
-import {MPortfolioWork} from "./portfolio-work/Portfolio-work";
-import {blockAnimation, textBgAnimation} from "assets/animation/animation";
+import {PortfolioWork} from "./portfolio-work/Portfolio-work";
+import {textBgAnimation} from "assets/animation/animation";
 import todoImage from 'assets/images/todo.jpg'
+import socialNetworkImage from 'assets/images/social-network.jpg'
 
 export const Portfolio = () => {
     return (
-        <motion.div
-            initial={"hidden"}
-            whileInView={"visible"}
-            viewport={{once: true, amount: 0.2}}
-            className={s.portfolioBlock}>
-            <h2>
+        <div className={s.portfolioBlock}>
+            <motion.h2
+                initial={"hidden"}
+                whileInView={"visible"}
+                viewport={{once: true, amount: 0.2}}>
                 <span className="titleBg">МОИ РАБОТЫ
                     <motion.span className="titleBgIn" variants={textBgAnimation}></motion.span>
                 </span>
-            </h2>
-            <motion.div
-                initial={"hidden"}
-                whileInView={"visible"}
-                viewport={{once: true, amount: 0.2}}
-                className={s.portfolioWorks}>
-                <MPortfolioWork
-                    variants={blockAnimation}
+            </motion.h2>
+            <div className={s.portfolioWorks}>
+                <PortfolioWork
                     link={"#"}
                     name={"TodoList"}
                     desc={
@@ -48,12 +43,11 @@ export const Portfolio = () => {
                             </ul>
                         </div>
                     }
-                    positionImg={'left'}
+                    positionImg={'right'}
                     bgImage={todoImage}/>
-                <MPortfolioWork
-                    variants={blockAnimation}
+                <PortfolioWork
                     link={"#"}
-                    name={"Название проекта"}
+                    name={"Социальная сеть"}
                     desc={
                         <div>
                             <p>Функционал:</p>
@@ -76,9 +70,9 @@ export const Portfolio = () => {
                             </ul>
                         </div>
                     }
-                    positionImg={'right'}
-                    bgImage={todoImage}/>
-            </motion.div>
-        </motion.div>
+                    positionImg={'left'}
+                    bgImage={socialNetworkImage}/>
+            </div>
+        </div>
     );
 };

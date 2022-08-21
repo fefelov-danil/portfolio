@@ -1,19 +1,20 @@
 .portfolioWork {
     padding: 90px 0 0 20px;
+    background: #f5f5f5;
     .columns {
         max-width: 1580px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin-left: auto;
-        .workImg {
+        .screen {
             position: relative;
+            order: 1;
             width: 48%;
             overflow: hidden;
             background-repeat: no-repeat;
             background-position: left bottom;
             z-index: 1;
-
         }
         .nameAndDesc {
             width: 40%;
@@ -57,6 +58,18 @@
             }
         }
     }
+}
+.portfolioWork:nth-of-type(even) {
+    padding: 90px 20px 0 0;
+    background: #fff;
+    .columns {
+        margin: 0;
+        .screen {
+            order: 0;
+            background-position: right bottom;
+        }
+    }
+
 
 }
 .forClass {

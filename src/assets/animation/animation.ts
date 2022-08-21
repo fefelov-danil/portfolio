@@ -83,7 +83,7 @@ export const fadeRightAnimation = {
 }
 export const fadeLeftAnimation = {
     hidden: {
-        x: 25,
+        x: -25,
         opacity: 0
     },
     visible: {

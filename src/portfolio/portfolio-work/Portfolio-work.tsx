@@ -1,6 +1,7 @@
-import React, {forwardRef, LegacyRef, ReactElement} from 'react';
+import React, {ReactElement} from 'react';
 import s from 'portfolio/portfolio-work/Portfolio-work.module.scss'
 import {motion} from "framer-motion";
+import {fadeLeftAnimation, fadeRightAnimation} from "assets/animation/animation";
 
 type PortfolioWorkPropsType = {
     link: string
@@ -10,28 +11,31 @@ type PortfolioWorkPropsType = {
     bgImage: string
 }
 
-export const PortfolioWork = forwardRef((props: PortfolioWorkPropsType, ref: LegacyRef<HTMLDivElement>) => {
-    const positionImg = props.positionImg === 'right' ? '0' : '1'
-    const bg = props.positionImg === 'right' ? '#ffffff' : '#f5f5f5'
+export const PortfolioWork = (props: PortfolioWorkPropsType) => {
     return (
-        <div className={s.portfolioWork} style={{background: bg}} ref={ref}>
+        <motion.div
+            initial={"hidden"}
+            whileInView={"visible"}
+            viewport={{once: true, amount: 0.2}}
+            className={s.portfolioWork}>
             <div className={s.columns}>
-                <div
-                    className={s.workImg}
-                    style={{order: positionImg, backgroundImage: `url(${props.bgImage})`}}>
-                </div>
-                <div className={s.nameAndDesc}>
+                <motion.div
+                    variants={props.positionImg === 'right' ? fadeRightAnimation : fadeLeftAnimation}
+                    className={s.screen}
+                    style={{backgroundImage: `url(${props.bgImage})`}}>
+                </motion.div>
+                <motion.div
+                    variants={props.positionImg === 'right' ? fadeLeftAnimation : fadeRightAnimation}
+                    className={s.nameAndDesc}>
                     <p className={s.name}>{props.name}</p>
                     <hr/>
                     {props.desc}
                     <a
                         href={props.link}
                         className={"btn-animation-blicked is-blicked"}>Смотреть</a>
-                </div>
+                </motion.div>
             </div>
 
-        </div>
+        </motion.div>
     );
-});
-
-export const MPortfolioWork = motion(PortfolioWork);
+};
