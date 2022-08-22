@@ -1,0 +1,49 @@
+.contactBlock {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 110px 20px;
+    background: #F5E1FF;
+    .container {
+        width: 100%;
+        h2 {
+            text-align: center;
+            font-size: 92px;
+            margin-bottom: 0;
+        }
+        hr {
+            width: 150px;
+            border-top: 4px solid #8FE48F;
+            margin: 48px auto;
+        }
+        p.subtitle {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        p.phoneAndSocial {
+            text-align: center;
+            margin: 0;
+            a {
+                font-size: 30px;
+                margin-right: 8px;
+            }
+            a.phone {
+                position: relative;
+                padding-right: 12px;
+                font-family: "Oswald", sans-serif;
+                font-weight: 400;
+                margin-right: 12px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 17%;
+                    width: 2px;
+                    height: 70%;
+                    background: #8FE48F;
+                }
+            }
+        }
+    }
+}
