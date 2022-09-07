@@ -8,7 +8,7 @@ import socialNetworkImage from 'assets/images/social-network.jpg'
 
 export const Portfolio = () => {
     return (
-        <div className={s.portfolioBlock}>
+        <div className={s.portfolioBlock} id={'anchorProjects'}>
             <motion.h2
                 initial={"hidden"}
                 whileInView={"visible"}

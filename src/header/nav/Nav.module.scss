@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    a {
+        position: relative;
+        padding: 12px 37px;
+        color: #2F3841;
+        font-family: "Oswald", sans-serif;
+        font-size: 19px;
+        letter-spacing: 1px;
+        text-decoration: underline;
+        cursor: pointer;
+        &:last-of-type {
+            padding-right: 0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            right: 0;
+            width: 1px;
+            height: 70%;
+            background: #788697;
+        }
+        &:last-of-type:before {
+            width: 0;
+        }
+    }
+}

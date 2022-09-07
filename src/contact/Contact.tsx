@@ -7,7 +7,8 @@ import blockBackground from "assets/images/fon-4.jpg";
 export const Contact = () => {
     return (
         <div className={s.contactBlock}
-             style = {{backgroundImage: `url('${blockBackground}')`}}>
+             style = {{backgroundImage: `url('${blockBackground}')`}}
+             id="anchorContacts">
             <div className={s.container}>
                 <h2>Контакты</h2>
                 <hr/>

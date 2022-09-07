@@ -9,7 +9,8 @@ export const Skills = () => {
     return (
         <div
             className={s.skillsBlock}
-            style = {{backgroundImage: `url('${blockBackground}')`}}>
+            style = {{backgroundImage: `url('${blockBackground}')`}}
+            id={'anchorSkills'}>
             <div className={"container"}>
                 <motion.h2
                     initial={"hidden"}
