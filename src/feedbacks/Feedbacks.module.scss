@@ -1,0 +1,14 @@
+.feedbacksBlock {
+  padding: 60px 15px;
+  background: #DCE2E6;
+  h2 {
+    text-align: center;
+    margin-bottom: 160px;
+  }
+  .feedbacksColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    row-gap: 120px;
+  }
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import s from 'contact/Contact.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faInstagram, faTelegram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import blockBackground from "assets/images/fon-4.jpg";
+import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons/faWhatsapp";
+import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 
 export const Contact = () => {
     return (
