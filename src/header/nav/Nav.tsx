@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from "header/nav/Nav.module.scss"
 import {Link} from "react-scroll";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -7,6 +7,8 @@ import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
 import {faWhatsapp} from "@fortawesome/free-brands-svg-icons/faWhatsapp";
 
 export const Nav = () => {
+    const [openMenu, setOpenMenu] = useState(false)
+
     return (
         <div className={s.navAndContacts}>
             <div className={s.contacts}>
@@ -21,27 +23,53 @@ export const Nav = () => {
                     <FontAwesomeIcon icon={faWhatsapp} color="#2AC54D" />
                 </a>
             </div>
-            <div className={s.nav}>
-                <Link
-                    to="anchorSkills"
-                    smooth={true}
-                    duration={500}
-                >Мои навыки</Link>
-                <Link
-                    to="anchorProjects"
-                    smooth={true}
-                    duration={500}
-                >Pet проекты</Link>
-                <Link
-                    to="anchorProjects"
-                    smooth={true}
-                    duration={500}
-                >Отзывы клиентов</Link>
-                <Link
-                    to="anchorContacts"
-                    smooth={true}
-                    duration={500}
-                >Контакты</Link>
+            <div className={openMenu
+                     ? `${s.nav} ${s.menuIsOpened}`
+                     : `${s.nav} ${s.menuIsClosed}`}>
+                <ul>
+                    <li>
+                        <Link
+                            to="anchorSkills"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpenMenu(false)}
+                        >Мои навыки</Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="anchorProjects"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpenMenu(false)}
+                        >Pet проекты</Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="anchorProjects"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpenMenu(false)}
+                        >Отзывы клиентов</Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="anchorContacts"
+                            smooth={true}
+                            duration={500}
+                            onClick={() => setOpenMenu(false)}
+                        >Контакты</Link>
+                    </li>
+                </ul>
+            </div>
+            <div onClick={() => setOpenMenu(!openMenu)}
+                className={!openMenu
+                    ? `${s.headerMenu} ${s.animationReverse}`
+                    : `${s.headerMenu} ${s.mobileMenuActive}`}>
+                <div className={s.headerBurger}>
+                    <div className={s.burger}>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
     );

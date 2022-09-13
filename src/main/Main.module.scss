@@ -1,6 +1,5 @@
 .mainBlock {
   position: relative;
-  min-height: 100vh;
   padding: 0 50px;
   overflow: hidden;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -68,29 +67,76 @@
         position: relative;
       }
     }
-
     .photo {
       width: 600px;
       min-height: 100vh;
       display: flex;
       align-items: flex-end;
+      padding-top: 90px;
       filter: grayscale(.3)
     }
   }
 }
-
-@media screen and (max-width: 1020px) {
-  .mainContainer {
-    display: block;
-
-    .text {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto 25px auto;
+@media screen and (max-width: 1250px) {
+  .mainBlock {
+    .rotateBg {
+      width: 70%;
     }
-
-    .photo {
-      margin: 0 auto;
+    .mainContainer {
+      .textAndIcon {
+        width: calc(100% - 500px);
+        h1 {
+          font-size: 125px;
+        }
+      }
+      .photo {
+        min-height: auto;
+        width: 500px;
+        img {
+          margin-bottom: -12%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1020px) {
+  .mainBlock {
+    padding: 0 30px;
+    .rotateBg {
+      width: 75%;
+    }
+    .mainContainer {
+      .textAndIcon {
+        width: calc(100% - 400px);
+        h1 {
+          font-size: 100px;
+        }
+        p {
+          font-size: 28px;
+        }
+      }
+      .photo {
+        min-height: auto;
+        width: 400px;
+        img {
+          margin-bottom: -12%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainBlock {
+    .mainContainer {
+      display: block;
+      .textAndIcon {
+        width: 100%;
+        padding-top: 70px;
+      }
+      .photo {
+        width: 100%;
+        padding-top: 30px;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import s from 'main/Main.module.scss'
 import me from 'assets/images/me.png'
 import iconSet from 'assets/icomoon/selection.json'
@@ -8,6 +8,8 @@ import {blockAnimationRotate, textAnimation} from "assets/animation/animation";
 import blockBackground from 'assets/images/gplay2.png'
 
 export const Main = () => {
+    const rotateBgRef = useRef(null)
+
     return (
         <motion.div
             initial={"hidden"}

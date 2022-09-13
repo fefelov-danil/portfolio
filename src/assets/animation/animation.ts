@@ -27,6 +27,20 @@ export const blockAnimationRotate = {
         }
     }
 }
+export const blockAnimationMobileRotate = {
+    hidden: {
+        opacity: 0.3,
+        transform: 'skew(-60deg, 0deg)',
+    },
+    visible: {
+        opacity: 1,
+        transform: 'skew(-70deg, 0deg)',
+        transition: {
+            duration: 0.6,
+            ease: "easeOut",
+        }
+    }
+}
 export const textAnimation = {
     hidden: {
         y: 30,
