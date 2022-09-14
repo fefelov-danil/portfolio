@@ -3,6 +3,11 @@
   background: #DCE2E6;
   h2 {
     text-align: center;
+    margin-bottom: 25px;
+  }
+  p.subTitle {
+    text-align: center;
+    font-size: 22px;
     margin-bottom: 160px;
   }
   .feedbacksColumns {
@@ -15,7 +20,7 @@
 @media screen and (max-width: 1020px) {
   .feedbacksBlock {
     padding: 40px 15px 60px 15px;
-    h2 {
+    p.subTitle {
       margin-bottom: 135px;
     }
     .feedbacksColumns {
@@ -27,7 +32,8 @@
 }
 @media screen and (max-width: 600px) {
   .feedbacksBlock {
-    h2 {
+    p.subTitle {
+      font-size: 18px;
       margin-bottom: 110px;
     }
     .feedbacksColumns {

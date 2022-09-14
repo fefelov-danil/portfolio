@@ -6,13 +6,13 @@ import feedback1 from 'assets/images/feedback1.jpg'
 import feedback2 from 'assets/images/feedback2.jpg'
 import feedback3 from 'assets/images/feedback3.jpg'
 import feedback4 from 'assets/images/feedback4.jpg'
-import {textBgAnimation} from "assets/animation/animation";
+import {fadeBottomAnimation, textBgAnimation} from "assets/animation/animation";
 import {Feedback} from "feedbacks/feedback/Feedback";
 
 export const Feedbacks = () => {
     return (
         <div className={s.feedbacksBlock} id={'anchorFeedbacks'}>
-            <div className={"container"}>
+            <motion.div className={"container"}>
                 <motion.h2
                     initial={"hidden"}
                     whileInView={"visible"}
@@ -21,6 +21,12 @@ export const Feedbacks = () => {
                         <motion.span className="titleBgIn" variants={textBgAnimation}></motion.span>
                     </span>
                 </motion.h2>
+                <motion.p
+                    initial={"hidden"}
+                    whileInView={"visible"}
+                    viewport={{once: true, amount: 0.3}}
+                    variants={fadeBottomAnimation}
+                    className={s.subTitle}>Около 7 лет я занимаюсь созданием сайтов. Ниже отзывы моих клиентов.</motion.p>
                 <div className={s.feedbacksColumns}>
                     <Feedback imgSrc={feedback1} name={'Евгений Мажаров'} longText={false} site={['восход24.рф', 'skazkalash.ru', 'vshgroup.ru']}
                               text={<p>Хочу выразить огромную благодарность Данилу за отличную работу и профессионализм. Всегда четкое соблюдение сроков, ответственный подход и точное понимание задачи. Вместе с сайтом я получил набор видеоинструкций по обновлению и добавлению информации в которых подробно описан каждый раздел сайта. Желаю удачи и процветания твоему делу!</p>}/>
@@ -39,7 +45,7 @@ export const Feedbacks = () => {
                     <Feedback imgSrc={feedback} name={'Евгения'} longText={false} site={['маткапитал24.рф']}
                               text={<p>Спасибо за хороший результат! Когда искали специалиста по изготовлению сайта, пообщались и встретились с непониманием людей чего именно мы хотим, остановились на данном специалисте потому что умеет выслушать и воплотить все наши пожелания в проекте которым мы остались довольны! При необходимости изготовить второй сайт, не задумываясь обратились снова.</p>}/>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };
