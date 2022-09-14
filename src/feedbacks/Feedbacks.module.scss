@@ -12,3 +12,26 @@
     row-gap: 135px;
   }
 }
+@media screen and (max-width: 1020px) {
+  .feedbacksBlock {
+    padding: 40px 15px 60px 15px;
+    h2 {
+      margin-bottom: 135px;
+    }
+    .feedbacksColumns {
+      max-width: 700px;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedbacksBlock {
+    h2 {
+      margin-bottom: 110px;
+    }
+    .feedbacksColumns {
+      row-gap: 105px;
+    }
+  }
+}

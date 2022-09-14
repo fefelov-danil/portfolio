@@ -96,9 +96,12 @@
     }
     .portfolioWork:nth-of-type(even) {
         padding: 50px 50px 0 50px;
-        .columns .screen {
-            order: 1;
-            background-position: center;
+        .columns {
+            margin: 0 auto;
+            .screen {
+                order: 1;
+                background-position: center;
+            }
         }
     }
 }

@@ -43,7 +43,7 @@ export const Feedback = ({imgSrc, name, longText, site, text}: FeedbackPropsType
                 </motion.div>}
             <motion.div className={s.sites} variants={fadeBottomAnimation}>
                 <p>{site.map((s, index) => {
-                        return <a key={index} href={`https://${s}`} target={'_blank'}>{index === site.length - 1 ? s : `${s},`}</a>
+                        return <a key={index} href={`https://${s}`} target={'_blank'}>{index === site.length - 1 ? s : `${s}, `}</a>
                     })}
                 </p>
 
