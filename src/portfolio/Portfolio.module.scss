@@ -5,11 +5,11 @@
         margin-bottom: 70px;
     }
 }
-
-@media screen and (max-width: 800px) {
-    .portfolioWorks {
-        grid-template-columns: 1fr;
-        max-width: 600px;
-        margin: 0 auto;
+@media screen and (max-width: 500px) {
+    .portfolioBlock {
+        padding-top: 40px;
+        h2 {
+            margin-bottom: 45px;
+        }
     }
 }

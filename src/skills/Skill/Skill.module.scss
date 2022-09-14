@@ -36,3 +36,11 @@
         margin-bottom: 0;
     }
 }
+@media screen and (max-width: 550px) {
+    .skill {
+        padding: 28px 40px 35px 40px;
+        .desc p {
+            font-size: 16px;
+        }
+    }
+}

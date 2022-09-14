@@ -4,12 +4,10 @@ import me from 'assets/images/me.png'
 import iconSet from 'assets/icomoon/selection.json'
 import IcomoonReact from "icomoon-react";
 import {motion} from 'framer-motion';
-import {blockAnimationRotate, textAnimation} from "assets/animation/animation";
+import {blockAnimationMobileRotate, blockAnimationRotate, textAnimation} from "assets/animation/animation";
 import blockBackground from 'assets/images/gplay2.png'
 
 export const Main = () => {
-    const rotateBgRef = useRef(null)
-
     return (
         <motion.div
             initial={"hidden"}
@@ -20,7 +18,7 @@ export const Main = () => {
                 className={s.mainBlockBg}
                 style = {{backgroundImage: `url('${blockBackground}')`}}></div>
             <motion.div
-                variants={blockAnimationRotate}
+                variants={window.innerWidth > 800 ? blockAnimationRotate : blockAnimationMobileRotate}
                 className={s.rotateBg}>
             </motion.div>
             <div className={s.mainContainer}>

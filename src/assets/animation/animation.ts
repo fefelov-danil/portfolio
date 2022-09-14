@@ -20,7 +20,7 @@ export const blockAnimationRotate = {
     },
     visible: {
         opacity: 1,
-        transform: 'skew(-18deg, 0deg)',
+        transform: 'skew(-20deg, 0deg)',
         transition: {
             duration: 0.6,
             ease: "easeOut",
@@ -29,12 +29,12 @@ export const blockAnimationRotate = {
 }
 export const blockAnimationMobileRotate = {
     hidden: {
-        opacity: 0.3,
-        transform: 'skew(-60deg, 0deg)',
+        opacity: 0.1,
+        transform: 'skew(-42deg, 0deg)',
     },
     visible: {
         opacity: 1,
-        transform: 'skew(-70deg, 0deg)',
+        transform: 'skew(-50deg, 0deg)',
         transition: {
             duration: 0.6,
             ease: "easeOut",

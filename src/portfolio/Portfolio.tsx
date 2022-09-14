@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import {PortfolioWork} from "./portfolio-work/Portfolio-work";
 import {textBgAnimation} from "assets/animation/animation";
 import todoImage from 'assets/images/todo.jpg'
+import todoPhoneImage from 'assets/images/todo-phone.png'
 import socialNetworkImage from 'assets/images/social-network.jpg'
 
 export const Portfolio = () => {
@@ -44,7 +45,7 @@ export const Portfolio = () => {
                         </div>
                     }
                     positionImg={'right'}
-                    bgImage={todoImage}/>
+                    bgImage={window.innerWidth > 1020 ? todoImage : todoPhoneImage}/>
                 <PortfolioWork
                     link={"#"}
                     name={"Социальная сеть"}
@@ -71,7 +72,7 @@ export const Portfolio = () => {
                         </div>
                     }
                     positionImg={'left'}
-                    bgImage={socialNetworkImage}/>
+                    bgImage={window.innerWidth > 1020 ? socialNetworkImage : todoPhoneImage}/>
             </div>
         </div>
     );

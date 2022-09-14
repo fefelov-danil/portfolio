@@ -99,10 +99,10 @@ hr {
 }
 @media only screen and (max-width: 1020px) {
     h1 {
-        font-size: 65px;
+        font-size: 75px;
     }
     h2 {
-        font-size: 55px;
+        font-size: 68px;
     }
     h3 {
         font-size: 28px;
@@ -113,10 +113,10 @@ hr {
 }
 @media only screen and (max-width: 800px) {
     h1 {
-        font-size: 48px;
+        font-size: 68px;
     }
     h2 {
-        font-size: 40px;
+        font-size: 58px;
     }
     h3 {
         font-size: 26px;
@@ -127,10 +127,10 @@ hr {
 }
 @media only screen and (max-width: 500px) {
     h1 {
-        font-size: 35px;
+        font-size: 50px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
     h3 {
         font-size: 24px;

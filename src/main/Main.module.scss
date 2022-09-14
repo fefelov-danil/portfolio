@@ -127,16 +127,60 @@
 }
 @media screen and (max-width: 800px) {
   .mainBlock {
+    .rotateBg {
+      width: 155%;
+      height: 100%;
+      left: -85%;
+      box-shadow: none;
+    }
     .mainContainer {
       display: block;
       .textAndIcon {
         width: 100%;
         padding-top: 70px;
+        h1 {
+          font-size: 80px;
+          text-align: center;
+          margin-bottom: 12px;
+        }
+        p {
+          text-align: center;
+        }
+        svg {
+          max-width: 100%;
+          max-height: 250%;
+          top: 60px;
+          left: 0;
+          transform: translate(0, 0);
+        }
       }
       .photo {
         width: 100%;
-        padding-top: 30px;
+        padding-top: 15px;
+        img {
+          max-width: 70%;
+          margin: 0 auto -11% auto;
+        }
       }
     }
+  }
+}
+@media screen and (max-width: 620px) {
+  .mainBlock {
+    padding: 0 15px;
+  }
+  .mainBlock .mainContainer .textAndIcon h1 {
+    font-size: 60px;
+  }
+  .mainBlock .mainContainer .textAndIcon p {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainBlock .mainContainer .textAndIcon h1 {
+    font-size: 45px;
+  }
+  .mainBlock .mainContainer .textAndIcon p {
+    font-size: 20px;
   }
 }

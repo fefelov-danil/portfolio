@@ -13,10 +13,16 @@
         gap: 40px;
     }
 }
-@media screen and (max-width: 800px) {
-    .skills {
-        max-width: 400px;
-        grid-template-columns: 1fr;
-        margin: auto;
+@media screen and (max-width: 1020px) {
+    .skillsBlock {
+        padding: 60px 20px 80px 20px;
+        h2 {
+            margin-bottom: 50px;
+        }
+        .skills {
+            max-width: 750px;
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+        }
     }
 }
