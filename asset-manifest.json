@@ -1,15 +1,41 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.63fd4e4b.css",
-    "main.js": "/portfolio/static/js/main.3f3f2d50.js",
+    "main.css": "/portfolio/static/css/main.da87f538.css",
+    "main.js": "/portfolio/static/js/main.bf34392f.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/me.png": "/portfolio/static/media/me.f82e7f480449863c29b2.png",
+    "static/media/Oswald-Medium.eot": "/portfolio/static/media/Oswald-Medium.0922d1d6384e1966882d.eot",
+    "static/media/Oswald-Medium.ttf": "/portfolio/static/media/Oswald-Medium.412de8ccd54c42018cad.ttf",
+    "static/media/Oswald-Regular.eot": "/portfolio/static/media/Oswald-Regular.238ec159343e65e17a0d.eot",
+    "static/media/Oswald-Regular.ttf": "/portfolio/static/media/Oswald-Regular.e1093f9adc57be310c08.ttf",
+    "static/media/todo-phone.png": "/portfolio/static/media/todo-phone.be998855d33783746bb4.png",
+    "static/media/Oswald-Light.eot": "/portfolio/static/media/Oswald-Light.fb02f52dd2f267860191.eot",
+    "static/media/Oswald-Light.ttf": "/portfolio/static/media/Oswald-Light.3ee3d5c16822fd99d9ed.ttf",
+    "static/media/fon-2.jpg": "/portfolio/static/media/fon-2.3ef5aed04ffcb8fa4392.jpg",
+    "static/media/fon-4.jpg": "/portfolio/static/media/fon-4.85b7e869a79452c894cd.jpg",
+    "static/media/todo.jpg": "/portfolio/static/media/todo.a9c9cb1b2e8ef4676dce.jpg",
+    "static/media/social-network.jpg": "/portfolio/static/media/social-network.979218e38b264cd8d937.jpg",
+    "static/media/Oswald-Medium.woff": "/portfolio/static/media/Oswald-Medium.166fc0cd2df8b0b4bf59.woff",
+    "static/media/Oswald-Regular.woff": "/portfolio/static/media/Oswald-Regular.7f8da1cd05f2191785fd.woff",
+    "static/media/Oswald-Light.woff": "/portfolio/static/media/Oswald-Light.74386c69a32d4334eb79.woff",
+    "static/media/feedback1.jpg": "/portfolio/static/media/feedback1.94faf89ea523ff8a8e58.jpg",
+    "static/media/OpenSansBold.eot": "/portfolio/static/media/OpenSansBold.bd28c119a39c9d84a7d3.eot",
+    "static/media/OpenSansBold.ttf": "/portfolio/static/media/OpenSansBold.b0cde4594957745358be.ttf",
+    "static/media/OpenSansRegular.eot": "/portfolio/static/media/OpenSansRegular.c9ebfe940e88be9056b5.eot",
+    "static/media/OpenSansRegular.ttf": "/portfolio/static/media/OpenSansRegular.1e96270eb92b148f2a25.ttf",
+    "static/media/feedback4.jpg": "/portfolio/static/media/feedback4.f58679642f99443b24ec.jpg",
+    "static/media/feedback3.jpg": "/portfolio/static/media/feedback3.5ab830aa180821694f8c.jpg",
+    "static/media/OpenSansBold.woff": "/portfolio/static/media/OpenSansBold.d6dc0a7557fc6ea09340.woff",
+    "static/media/OpenSansRegular.woff": "/portfolio/static/media/OpenSansRegular.f815477469249e798748.woff",
+    "static/media/feedback2.jpg": "/portfolio/static/media/feedback2.90da5b32ea288d1050b3.jpg",
+    "static/media/gplay2.png": "/portfolio/static/media/gplay2.4dad5e538fe1a398b2e0.png",
     "index.html": "/portfolio/index.html",
-    "main.63fd4e4b.css.map": "/portfolio/static/css/main.63fd4e4b.css.map",
-    "main.3f3f2d50.js.map": "/portfolio/static/js/main.3f3f2d50.js.map",
+    "main.da87f538.css.map": "/portfolio/static/css/main.da87f538.css.map",
+    "main.bf34392f.js.map": "/portfolio/static/js/main.bf34392f.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63fd4e4b.css",
-    "static/js/main.3f3f2d50.js"
+    "static/css/main.da87f538.css",
+    "static/js/main.bf34392f.js"
   ]
 }
