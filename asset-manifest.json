@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.27ddd9ec.css",
-    "main.js": "/portfolio/static/js/main.46b8ecc5.js",
+    "main.css": "/portfolio/static/css/main.a9c7159a.css",
+    "main.js": "/portfolio/static/js/main.089a2964.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/me.png": "/portfolio/static/media/me.f82e7f480449863c29b2.png",
+    "static/media/packs.png": "/portfolio/static/media/packs.5354a207e687b509d187.png",
+    "static/media/packs-phone.png": "/portfolio/static/media/packs-phone.d99d3568fa79acfaf0ff.png",
+    "static/media/todo1.png": "/portfolio/static/media/todo1.7f56b55ba52c9b0bc937.png",
     "static/media/Oswald-Medium.eot": "/portfolio/static/media/Oswald-Medium.0922d1d6384e1966882d.eot",
     "static/media/Oswald-Medium.ttf": "/portfolio/static/media/Oswald-Medium.412de8ccd54c42018cad.ttf",
     "static/media/Oswald-Regular.eot": "/portfolio/static/media/Oswald-Regular.238ec159343e65e17a0d.eot",
     "static/media/Oswald-Regular.ttf": "/portfolio/static/media/Oswald-Regular.e1093f9adc57be310c08.ttf",
-    "static/media/todo-phone.png": "/portfolio/static/media/todo-phone.be998855d33783746bb4.png",
     "static/media/Oswald-Light.eot": "/portfolio/static/media/Oswald-Light.fb02f52dd2f267860191.eot",
     "static/media/Oswald-Light.ttf": "/portfolio/static/media/Oswald-Light.3ee3d5c16822fd99d9ed.ttf",
     "static/media/fon-2.jpg": "/portfolio/static/media/fon-2.3ef5aed04ffcb8fa4392.jpg",
     "static/media/fon-4.jpg": "/portfolio/static/media/fon-4.85b7e869a79452c894cd.jpg",
-    "static/media/todo.jpg": "/portfolio/static/media/todo.a9c9cb1b2e8ef4676dce.jpg",
-    "static/media/social-network.jpg": "/portfolio/static/media/social-network.979218e38b264cd8d937.jpg",
+    "static/media/todo-phone1.png": "/portfolio/static/media/todo-phone1.ca18565bb269bdf9e0f6.png",
     "static/media/Oswald-Medium.woff": "/portfolio/static/media/Oswald-Medium.166fc0cd2df8b0b4bf59.woff",
     "static/media/Oswald-Regular.woff": "/portfolio/static/media/Oswald-Regular.7f8da1cd05f2191785fd.woff",
     "static/media/Oswald-Light.woff": "/portfolio/static/media/Oswald-Light.74386c69a32d4334eb79.woff",
@@ -30,12 +31,12 @@
     "static/media/feedback2.jpg": "/portfolio/static/media/feedback2.90da5b32ea288d1050b3.jpg",
     "static/media/gplay2.png": "/portfolio/static/media/gplay2.4dad5e538fe1a398b2e0.png",
     "index.html": "/portfolio/index.html",
-    "main.27ddd9ec.css.map": "/portfolio/static/css/main.27ddd9ec.css.map",
-    "main.46b8ecc5.js.map": "/portfolio/static/js/main.46b8ecc5.js.map",
+    "main.a9c7159a.css.map": "/portfolio/static/css/main.a9c7159a.css.map",
+    "main.089a2964.js.map": "/portfolio/static/js/main.089a2964.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27ddd9ec.css",
-    "static/js/main.46b8ecc5.js"
+    "static/css/main.a9c7159a.css",
+    "static/js/main.089a2964.js"
   ]
 }
