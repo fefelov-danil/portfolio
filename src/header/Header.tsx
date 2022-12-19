@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from "header/Header.module.scss"
 import {Nav} from "./nav/Nav";
 

@@ -3,9 +3,10 @@ import s from 'portfolio/Portfolio.module.scss'
 import {motion} from 'framer-motion'
 import {PortfolioWork} from "./portfolio-work/Portfolio-work";
 import {textBgAnimation} from "assets/animation/animation";
-import todoImage from 'assets/images/todo.jpg'
-import todoPhoneImage from 'assets/images/todo-phone.png'
-import socialNetworkImage from 'assets/images/social-network.jpg'
+import todoImage from 'assets/images/todo1.png'
+import packsImage from 'assets/images/packs.png'
+import todoPhoneImage from 'assets/images/todo-phone1.png'
+import packsPhoneImage from 'assets/images/packs-phone.png'
 
 export const Portfolio = () => {
     return (
@@ -20,59 +21,39 @@ export const Portfolio = () => {
             </motion.h2>
             <div className={s.portfolioWorks}>
                 <PortfolioWork
-                    link={"#"}
-                    name={"TodoList"}
-                    desc={
-                        <div>
-                            <p>Функционал:</p>
-                            <ul className="ul-custom">
-                                <li>Создание/удаление тудулистов</li>
-                                <li>Создание/удаление задач</li>
-                                <li>Перетаскивание задач и тудулистов</li>
-                                <li>Изменение заголовков задач и тудулистов</li>
-                                <li>Изменение статуса задач</li>
-                                <li>Сортировка задач по статусу</li>
-                            </ul>
-                            <p>Какие технологии использую:</p>
-                            <ul className="ul-custom">
-                                <li>React</li>
-                                <li>Redux</li>
-                                <li>Реализована работа с сервером через axios</li>
-                                <li>Для диспатчей использую thunk middleware</li>
-                                <li>Отдельно для некоторых компонент сделал истории в storybook</li>
-                                <li>На все редьюсеры написал unit тесты</li>
-                            </ul>
-                        </div>
-                    }
+                    link={"https://incubator-friday.vercel.app/"}
+                    name={"Обучение"}
                     positionImg={'right'}
-                    bgImage={window.innerWidth > 1020 ? todoImage : todoPhoneImage}/>
+                    bgImage={window.innerWidth > 1020 ? packsImage : packsPhoneImage}>
+                    <div>
+                        <p>Функционал:</p>
+                        <ul className="ul-custom">
+                            <li>CRUD оперции с колодами и карточками</li>
+                            <li>Обучение по своим и чужим карточкам</li>
+                            <li>Добавление картинок</li>
+                            <li>Фильтры, useDebounce</li>
+                            <li>UseSearchParams для фильтров</li>
+                            <li>Соритровка</li>
+                            <li>Погинация</li>
+                        </ul>
+                    </div>
+                </PortfolioWork>
                 <PortfolioWork
-                    link={"#"}
-                    name={"Социальная сеть"}
-                    desc={
-                        <div>
-                            <p>Функционал:</p>
-                            <ul className="ul-custom">
-                                <li>Создавать/удалять тудулисты</li>
-                                <li>Создавать/удалять задачи</li>
-                                <li>Перетаскивать задачи и тудулисты</li>
-                                <li>Менять заголовки задач и тудулистов</li>
-                                <li>Менять статус задач</li>
-                                <li>Сотрировать задачи</li>
-                            </ul>
-                            <p>Какие технологии использую:</p>
-                            <ul className="ul-custom">
-                                <li>React</li>
-                                <li>Redux</li>
-                                <li>Реализована работа с сервером через axios</li>
-                                <li>Для диспатчей использую thunk middleware</li>
-                                <li>Отдельно для некоторых компонент сделал истории в storybook</li>
-                                <li>На все редьюсеры написал unit тесты</li>
-                            </ul>
-                        </div>
-                    }
+                    link={"https://todolist.fefelow.ru/"}
+                    name={"TodoList"}
                     positionImg={'left'}
-                    bgImage={window.innerWidth > 1020 ? socialNetworkImage : todoPhoneImage}/>
+                    bgImage={window.innerWidth > 1020 ? todoImage : todoPhoneImage}>
+                    <div>
+                        <p>Функционал:</p>
+                        <ul className="ul-custom">
+                            <li>CRUD оперции с тудулистами и задачами</li>
+                            <li>Управление статусом задач</li>
+                            <li>Сортировка задач по статусу</li>
+                            <li>Адаптивный дизайн</li>
+                            <li>Интуитивно понятный интерфейс</li>
+                        </ul>
+                    </div>
+                </PortfolioWork>
             </div>
         </div>
     );

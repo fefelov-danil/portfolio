@@ -1,12 +1,12 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 import s from 'portfolio/portfolio-work/Portfolio-work.module.scss'
 import {motion} from "framer-motion";
 import {fadeLeftAnimation, fadeRightAnimation} from "assets/animation/animation";
 
 type PortfolioWorkPropsType = {
+    children: React.ReactNode
     link: string
     name: string
-    desc: ReactElement
     positionImg: string
     bgImage: string
 }
@@ -29,9 +29,10 @@ export const PortfolioWork = (props: PortfolioWorkPropsType) => {
                     className={s.nameAndDesc}>
                     <p className={s.name}>{props.name}</p>
                     <hr/>
-                    {props.desc}
+                    {props.children}
                     <a
                         href={props.link}
+                        target={'_blank'}
                         className={"btn-animation-blicked is-blicked"}>Смотреть</a>
                 </motion.div>
             </div>
