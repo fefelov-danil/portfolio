@@ -41,11 +41,11 @@ export const Nav = () => {
                             smooth={true}
                             duration={500}
                             onClick={() => setOpenMenu(false)}
-                        >Pet проекты</Link>
+                        >Проекты</Link>
                     </li>
                     <li>
                         <Link
-                            to="anchorProjects"
+                            to="anchorFeedbacks"
                             smooth={true}
                             duration={500}
                             onClick={() => setOpenMenu(false)}
