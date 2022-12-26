@@ -1,169 +1,240 @@
 .portfolioWork {
-    padding: 90px 0 0 60px;
-    background: #f5f5f5;
-    .columns {
-        max-width: 1615px;
-        width: 100%;
+  padding: 90px 0 0 60px;
+  background: #f5f5f5;
+
+  .columns {
+    max-width: 1615px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+
+    .screen {
+      position: relative;
+      display: flex;
+      order: 1;
+      width: 55%;
+      min-height: 630px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      z-index: 1;
+    }
+
+    .nameAndDesc {
+      width: 40%;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      p.name {
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      hr {
+        width: 110px;
+        border-top: 3px solid #8FE48F;
+        margin: 40px 0;
+      }
+
+      div p {
+        font-family: "Oswald", sans-serif;
+        font-size: 28px;
+        font-weight: 200;
+        margin-bottom: 22px;
+      }
+
+      div ul {
+        margin-bottom: 40px;
+      }
+
+      div li {
+        font-size: 20px;
+        margin-bottom: 8px;
+
+        &:before {
+          top: 10px;
+          width: 8px;
+          height: 8px;
+        }
+      }
+
+      a {
+        padding: 15px 90px;
+        background: #8FE48F;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+        transition: 0.2s;
+      }
+
+      a:hover {
+        background: #76BC76;
+      }
+
+      .links {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-left: auto;
-        .screen {
-            position: relative;
-            order: 1;
-            width: 55%;
-            min-height: 630px;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-position: left bottom;
-            z-index: 1;
+        justify-content: flex-start;
+        align-items: center;
+
+        a.gh {
+          padding: 5px;
+          background: #434D56;
+          margin-left: 5px;
+          transition: 0.2s;
+
+          &:hover {
+            background: #24292E;
+          }
+
+          svg {
+            width: 46px;
+            height: 46px;
+          }
         }
-        .nameAndDesc {
-            width: 40%;
-            p {
-                margin-bottom: 0;
-            }
-            p.name {
-                font-size: 60px;
-                font-weight: 600;
-                margin-bottom: 0;
-            }
-            hr {
-                width: 110px;
-                border-top: 3px solid #8FE48F;
-                margin: 40px 0;
-            }
-            div p {
-                font-family: "Oswald", sans-serif;
-                font-size: 28px;
-                font-weight: 200;
-                margin-bottom: 22px;
-            }
-            div ul {
-                margin-bottom: 40px;
-            }
-            div li {
-                font-size: 20px;
-                margin-bottom: 8px;
-                &:before {
-                    top: 10px;
-                    width: 8px;
-                    height: 8px;
-                }
-            }
-            a {
-                padding: 15px 90px;
-                background: #8FE48F;
-                color: #000;
-                font-size: 20px;
-                font-weight: 600;
-                text-transform: uppercase;
-                margin-bottom: 80px;
-                transition: 0.2s;
-            }
-            a:hover {
-                background: #76BC76;
-            }
-        }
+      }
+
     }
+  }
 }
+
 .portfolioWork:nth-of-type(even) {
-    padding: 90px 20px 0 0;
-    background: #fff;
-    .columns {
-        max-width: 1680px;
-        margin: 0;
-        .screen {
-            width: 52%;
-            order: 0;
-            background-position: right bottom;
-        }
-        .nameAndDesc {
-            width: 37%;
-        }
+  padding: 90px 20px 0 0;
+  background: #fff;
+
+  .columns {
+    max-width: 1680px;
+    margin: 0;
+
+    .screen {
+      width: 52%;
+      order: 0;
+      background-position: right bottom;
     }
+
+    .nameAndDesc {
+      width: 37%;
+    }
+  }
 }
+
 .forClass {
-    text-align: center;
+  text-align: center;
 }
+
 @media screen and (max-width: 1020px) {
-    .portfolioWork {
-        padding: 50px 50px 0 50px;
-        .columns {
-            max-width: 700px;
-            margin: 0 auto;
-            .screen {
-                width: 100%;
-                height: 500px;
-                background-size: contain;
-                background-position: center;
-            }
-            .nameAndDesc {
-                width: 100%;
-                a {
-                    margin-bottom: 50px;
-                }
-            }
+  .portfolioWork {
+    padding: 50px 50px 0 50px;
+
+    .columns {
+      max-width: 700px;
+      margin: 0 auto;
+
+      .screen {
+        width: 100%;
+        height: 500px;
+        min-height: auto;
+        background-size: contain;
+        background-position: center;
+      }
+
+      .nameAndDesc {
+        width: 100%;
+
+        a {
+          margin-bottom: 50px;
         }
+      }
     }
-    .portfolioWork:nth-of-type(even) {
-        padding: 50px 50px 0 50px;
-        .columns {
-            margin: 0 auto;
-            .screen {
-                order: 1;
-                background-position: center;
-            }
-        }
+  }
+  .portfolioWork:nth-of-type(even) {
+    padding: 50px 50px 0 50px;
+
+    .columns {
+      margin: 0 auto;
+
+      .screen {
+        width: 100%;
+        order: 1;
+        background-position: center;
+      }
+
+      .nameAndDesc {
+        width: 100%;
+      }
     }
+  }
 }
+
 @media screen and (max-width: 800px) {
-    .portfolioWork {
-        .columns {
-            .nameAndDesc {
-                p.name {
-                    font-size: 40px;
-                }
-                hr {
-                    margin: 25px 0;
-                }
-                div {
-                    p {
-                        font-size: 26px;
-                        margin-bottom: 15px;
-                    }
-                    ul {
-                        margin-bottom: 25px;
-                        li {
-                            font-size: 16px;
-                        }
-                    }
-                }
-                a {
-                    padding: 13px 70px;
-                    font-size: 18px;
-                }
-            }
+  .portfolioWork {
+    .columns {
+      .nameAndDesc {
+        p.name {
+          font-size: 40px;
         }
+
+        hr {
+          margin: 25px 0;
+        }
+
+        div {
+          p {
+            font-size: 26px;
+            margin-bottom: 15px;
+          }
+
+          ul {
+            margin-bottom: 25px;
+
+            li {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .links {
+          a {
+            padding: 13px 70px;
+            font-size: 18px;
+            margin-bottom: 30px;
+          }
+
+          a.gh svg {
+            width: 39px;
+            height: 39px;
+          }
+        }
+      }
     }
+  }
 }
+
 @media screen and (max-width: 500px) {
-    .portfolioWork {
-        padding: 35px 30px 0 30px;
-        .columns {
-            .nameAndDesc {
-                p.name {
-                    font-size: 32px;
-                }
-            }
+  .portfolioWork {
+    padding: 35px 30px 0 30px;
+
+    .columns {
+      .nameAndDesc {
+        p.name {
+          font-size: 32px;
         }
+      }
     }
-    .portfolioWork:nth-of-type(even) {
-        padding: 35px 30px 0 30px;
-    }
+  }
+  .portfolioWork:nth-of-type(even) {
+    padding: 35px 30px 0 30px;
+  }
 }
+
 @media screen and (max-width: 420px) {
-    .portfolioWork .columns .screen {
-        height: 380px;
-    }
+  .portfolioWork .columns .screen {
+    height: 380px;
+  }
 }

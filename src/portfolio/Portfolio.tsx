@@ -22,6 +22,7 @@ export const Portfolio = () => {
             <div className={s.portfolioWorks}>
                 <PortfolioWork
                     link={"https://incubator-friday.vercel.app/"}
+                    gitHubLink={'https://github.com/fefelov-danil/incubator-friday'}
                     name={"Обучение"}
                     positionImg={'right'}
                     bgImage={window.innerWidth > 1020 ? packsImage : packsPhoneImage}>
@@ -40,6 +41,7 @@ export const Portfolio = () => {
                 </PortfolioWork>
                 <PortfolioWork
                     link={"https://todolist.fefelow.ru/"}
+                    gitHubLink={'https://github.com/fefelov-danil/todolist'}
                     name={"TodoList"}
                     positionImg={'left'}
                     bgImage={window.innerWidth > 1020 ? todoImage : todoPhoneImage}>
